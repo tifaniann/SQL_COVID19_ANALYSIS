@@ -55,7 +55,6 @@ SUM(new_cases)/sum(population)*100 as WorldsCasesPercentage,
 sum(population) as Total_Population
 FROM covid_case.dbo.deaths 
 WHERE continent is not null
-GROUP BY DATE
 ORDER BY 1,2;
 
 --Using VACCINATION table--
